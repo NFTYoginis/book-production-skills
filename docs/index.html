@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Production Skills — Six Methods, Pulled From Six Real Books</title>
+<meta name="description" content="Six book production skills, pulled from real books, not theory. Two are built and live; four are mapped and waiting on a build slot.">
+<meta property="og:title" content="Book Production Skills">
+<meta property="og:description" content="Six methods, pulled from six real books. Two live today, four mapped and waiting on a build slot.">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --cream: #faf8f3;
+    --ink: #1a1a1a;
+    --muted: #5b5b5b;
+    --amber: #b5731a;
+    --surface: #fdf3e2;
+    --border: #e8dfc9;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(250,248,243,0.96);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(4px);
+  }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; }
+  .brand { font-weight: 700; font-size: 1.05rem; color: var(--ink); text-decoration: none; }
+  .navlinks { display: flex; gap: 24px; align-items: center; }
+  .navlinks a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+  .navlinks a:hover { color: var(--amber); }
+  .btn {
+    display: inline-block; padding: 10px 20px; border-radius: 6px;
+    font-weight: 600; text-decoration: none; font-size: 0.95rem;
+    border: 1px solid transparent; cursor: pointer;
+  }
+  .btn-primary { background: var(--amber); color: #fff; }
+  .btn-primary:hover { background: #9c6015; }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--border); }
+  .btn-ghost:hover { border-color: var(--amber); color: var(--amber); }
+  header.hero { padding: 96px 0 72px; text-align: center; }
+  header.hero h1 { font-size: 2.5rem; line-height: 1.2; margin: 0 0 24px; max-width: 780px; margin-left: auto; margin-right: auto; }
+  header.hero p.sub { font-size: 1.15rem; color: var(--muted); max-width: 720px; margin: 0 auto; }
+  section { padding: 64px 0; border-top: 1px solid var(--border); }
+  section h2 { font-size: 1.8rem; margin-bottom: 8px; }
+  section p.lead { color: var(--muted); max-width: 700px; margin-bottom: 40px; }
+  .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .skill-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 28px; display: flex; flex-direction: column; gap: 12px;
+  }
+  .skill-card.is-coming { border-style: dashed; background: var(--cream); }
+  .skill-card .badge-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .skill-card h3 { margin: 0; font-size: 1.2rem; }
+  .badge {
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 3px 10px; border-radius: 20px; white-space: nowrap;
+  }
+  .badge-live { background: var(--amber); color: #fff; }
+  .badge-coming { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+  .skill-card p { margin: 0; color: var(--muted); font-size: 0.97rem; flex: 1; }
+  .skill-card .card-cta { margin-top: 4px; }
+  .closing {
+    text-align: center; padding: 72px 0; border-top: 1px solid var(--border);
+  }
+  .closing p { font-size: 1.3rem; color: var(--ink); max-width: 640px; margin: 0 auto; line-height: 1.5; }
+  .closing p + p { margin-top: 10px; }
+  footer { padding: 40px 0 60px; border-top: 1px solid var(--border); }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center; }
+  footer p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+  footer .credit { font-size: 0.8rem; color: var(--muted); }
+  em { font-style: italic; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Book Production Skills</a>
+    <div class="navlinks">
+      <a href="#skills">The six skills</a>
+      <a class="btn btn-primary" href="#skills">See what's live</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <h1>Six methods, pulled from six real books.</h1>
+    <p class="sub">Book Production Skills is six methods, pulled from six real books, not from a theory of how book production should work. This shelf (<em>Are You Actually Hungry?</em>, <em>Hold The Room</em>, <em>Joint Dialogue Method</em>, <em>Yin</em>, and two more) has already gone through capture, drafting, revision, layout, and, three times now, a full retitle. Two of the six methods below are built and live today. The other four are mapped in the same detail from that same production history and are waiting on a build slot. Each one runs as a skill inside Claude Code, which is what you'd need to use them. Nothing here works on its own.</p>
+  </div>
+</header>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>The six skills</h2>
+    <p class="lead">In the order a book actually moves through them.</p>
+    <div class="skill-grid">
+
+      <div class="skill-card">
+        <div class="badge-row">
+          <h3>Book Ghostwriting</h3>
+          <span class="badge badge-live">Live</span>
+        </div>
+        <p><a href="https://nftyoginis.github.io/book-ghostwriting-skill/" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline;">Book Ghostwriting</a> walks capture through cover in seven stages, and at every one of them it refuses to invent. Ask it to fill a chapter with a scene the author never actually told it, and it says so, the same way every time: <em>"That's not something you've told me yet — it goes on the still-needed list, not into the draft."</em> The chapter stays marked needs-material. It only gets promoted when a real capture session produces the actual scene — never by a plausible-sounding guess standing in for it. This is the seven-stage shape that took <em>Are You Actually Hungry?</em> from a recorded conversation to a finished manuscript, the sixth time this shelf has run it.</p>
+        <div class="card-cta"><a class="btn btn-primary" href="https://nftyoginis.github.io/book-ghostwriting-skill/" target="_blank" rel="noopener">See Book Ghostwriting</a></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="badge-row">
+          <h3>Publishing Preparation</h3>
+          <span class="badge badge-live">Live</span>
+        </div>
+        <p><a href="https://nftyoginis.github.io/publishing-preparation-skill/" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline;">Publishing Preparation</a> takes a manuscript that's already finished and revision-passed and produces the files a retail channel actually accepts: a trim-sized PDF, an EPUB, a DOCX, a stripped Markdown master. It runs one of two layout pipelines, built independently by two people who didn't know the other one existed, and between them the two have already shipped five books. Both converge on the same proven output: a six-file retail package, every time. The pipeline built from fresh chapter source renders with pagedjs-cli specifically, never Chrome's print-to-PDF, because Chrome headless drops running heads and page-number counters silently. The page count still looks right, so the mistake doesn't surface until someone's holding a printed proof. The skill won't call a Chrome-headless render finished when running heads are required.</p>
+        <div class="card-cta"><a class="btn btn-primary" href="https://nftyoginis.github.io/publishing-preparation-skill/" target="_blank" rel="noopener">See Publishing Preparation</a></div>
+      </div>
+
+      <div class="skill-card is-coming">
+        <div class="badge-row">
+          <h3>Title &amp; Positioning</h3>
+          <span class="badge badge-coming">Coming</span>
+        </div>
+        <p>Title &amp; Positioning covers two jobs: naming a book before it exists, and renaming one that's already out and not finding readers. The renaming half is the better-proven of the two. Three books on this shelf — <em>Joint Dialogue Method</em>, <em>Hold The Room</em>, <em>Yin</em> — went through the same pass: the old cover files and PDFs move into an archive folder, the title on the cover changes, and the working file names underneath stay exactly as they were. First-time naming carries its own discipline: five candidates a round, each one paired with a stated reason it works and a stated risk against it, never handed over as a single winner.</p>
+      </div>
+
+      <div class="skill-card is-coming">
+        <div class="badge-row">
+          <h3>Book-to-Content Repurposing</h3>
+          <span class="badge badge-coming">Coming</span>
+        </div>
+        <p>Book-to-Content Repurposing starts from one instruction: the finished book is already the asset library. The signature lines, the myth-versus-fact boxes, the quote spreads are done and already screenshot-ready — the job is exporting them, not writing new ones to replace them. The harder rule sits underneath that. When a line gets pulled out and applied somewhere the book itself never actually went, it carries a visible marker saying so, so a reader scrolling past a reel can't mistake an applied line for something the author said.</p>
+      </div>
+
+      <div class="skill-card is-coming">
+        <div class="badge-row">
+          <h3>Fact, Claim &amp; Evidence Verification</h3>
+          <span class="badge badge-coming">Coming</span>
+        </div>
+        <p>Fact, Claim &amp; Evidence Verification tags every factual claim in a manuscript before it goes to print: strong, moderate, or speculative — and a popular claim that gets debunked counts as a finding, not a dead end. That tiering already ran across ten research files and a dedicated safety chapter on one book in this shelf. The skill is that same discipline, written down so the next book gets it without re-deriving it from scratch.</p>
+      </div>
+
+      <div class="skill-card is-coming">
+        <div class="badge-row">
+          <h3>Book Launch &amp; Funnel Strategy</h3>
+          <span class="badge badge-coming">Coming</span>
+        </div>
+        <p>Book Launch &amp; Funnel Strategy is built on a real correction, not a clean success. An early draft of one book's launch plan built out a full funnel — membership, cohorts, coaching, a paid ladder — before it was clear the site wasn't a funnel at all, it was the book's companion. The plan got rebuilt around one question instead: does this page help a reader enter the book, understand it, keep going, or go deeper. The skill carries both models and the judgment call for choosing between them, plus the sequencing underneath: owned channels have to prove the assets work before a single cold pitch goes out.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="closing">
+  <div class="wrap">
+    <p>None of these six were designed ahead of a book.</p>
+    <p>Every one was written down after it already worked.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>Book Production Skills — a shelf of skills, each pulled from a real book's own production trail.</p>
+    <p class="credit">Gabe — Your AI Specialist</p>
+  </div>
+</footer>
+
+</body>
+</html>
