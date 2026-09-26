@@ -4,14 +4,14 @@ A single static landing page cataloguing six Book Production skills for Claude C
 
 Live: https://nftyoginis.github.io/book-production-skills/
 
-This repo is the catalog page only — not a skill itself. Two of the six skills it lists are built and live and link out to their own repos; the other four are mapped and waiting on a build slot.
+This repo is the catalog page only — not a skill itself. All six skills it lists are built, and each is in its own public repo:
 
-- [Book Ghostwriting](https://nftyoginis.github.io/book-ghostwriting-skill/) — live
-- [Publishing Preparation](https://nftyoginis.github.io/publishing-preparation-skill/) — live
-- Title & Positioning — coming
-- Book-to-Content Repurposing — coming
-- Fact, Claim & Evidence Verification — coming
-- Book Launch & Funnel Strategy — coming
+1. [Book Ghostwriting](https://github.com/NFTYoginis/book-ghostwriting-skill) — [page](https://nftyoginis.github.io/book-ghostwriting-skill/)
+2. [Publishing Preparation](https://github.com/NFTYoginis/publishing-preparation-skill) — [page](https://nftyoginis.github.io/publishing-preparation-skill/)
+3. [Title & Positioning](https://github.com/NFTYoginis/title-and-positioning-skill) — [page](https://nftyoginis.github.io/title-and-positioning-skill/)
+4. [Book-to-Content Repurposing](https://github.com/NFTYoginis/book-to-content-repurposing-skill) — [page](https://nftyoginis.github.io/book-to-content-repurposing-skill/)
+5. [Fact, Claim & Evidence Verification](https://github.com/NFTYoginis/fact-claim-verification-skill) — [page](https://nftyoginis.github.io/fact-claim-verification-skill/)
+6. [Book Launch & Funnel Strategy](https://github.com/NFTYoginis/book-launch-funnel-strategy-skill) — [page](https://nftyoginis.github.io/book-launch-funnel-strategy-skill/)
 
 ## What this is
 
@@ -20,3 +20,7 @@ This repo is the catalog page only — not a skill itself. Two of the six skills
 ## License
 
 MIT — see `LICENSE`.
+
+---
+
+Built by Gabe at The Quiet Ai. The Quiet Scribe Suite (early access) carries your context from one AI tool to the next: [thequietscribe.com](https://thequietscribe.com)
